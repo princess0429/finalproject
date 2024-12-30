@@ -1,0 +1,109 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #FF6F61, #6B5B95, #88B04B, #F7CAC9, #92A8D1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.menu-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.menu-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.menu-box a {
+    font-style: Georgia;
+    text-decoration: underline;
+    color: #007BFF;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.menu-box img {
+    width: 50px; 
+    height: auto; 
+    margin-top: 5px;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    margin-top: 60px; 
+}
+
+h1 {
+    justify-content: center;
+}
+
+
+section h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+section img {
+    width: 300px;  
+    height: 200px; 
+    object-fit: cover; 
+}
+
+section p {
+    font-size: 1.1em;
+    color: black;
+    line-height: 1.5em;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
